@@ -49,10 +49,10 @@
 </head>
 
 <body>
-  <div class="fixed z-50 left-0 w-full top-0 h-[80px] ">
+  <div id="navbar_contain" class="navbar fixed z-50 left-0 w-full top-0 h-[80px] ">
 
     <div class="flex max-w-[1200px]  px-4 mx-auto justify-between items-center h-[80px] relative">
-      <div class="overflow-hidden w-[150px] sm:w-[250px] ">
+      <div class="overflow-hidden w-[120px] sm:w-[210px] ">
         <img class="w-full h-full object-cover" src="./images/logo.svg" alt="logo-image">
       </div>
       <div class="xxmd:flex hidden h-[100%] gap-4 items-center">
@@ -104,7 +104,7 @@
         </div>
 
       </div>
-      <button class="flex bg-brightRed hover:bg-paleRed text-white rounded-full px-4 py-2">Get
+      <button class="hidden md:flex bg-brightRed hover:bg-paleRed text-white rounded-full px-4 py-2">Get
         Started</button>
       <span class="inline-block md:hidden cursor-pointer" id="menu">
         <i class="fa-solid fa-bars text-4xl"></i>
@@ -147,7 +147,7 @@
         </div>
       </div>
     </div>
-    <div class="absolute overflow-hidden -top-24 -right-2 -z-10 w-[500px]">
+    <div class="absolute overflow-hidden -top-28 md:-top-24  -right-4 -z-10 w-[350px] md:w-[500px]">
 
       <img class="bg-cover object-cover rotate-200 " src="./images/bg-tablet-pattern.svg" alt="deskto-intro">
     </div>
@@ -286,10 +286,12 @@
 
 
   <div class="py-8 bg-vdarkBlue">
-    <div class="flex flex-col sm:flex-row gap-4 px-4 max-w-[1100px] mx-auto justify-between">
-      <div class="w-full sm:w-[60%] flex-col xsm:flex-row flex gap-4 xsm:gap-2">
+    <div class="flex flex-col-reverse sm:flex-row gap-4 px-4 max-w-[1100px] mx-auto justify-between">
+      <p class=" text-center sm:hidden text-gray-200"> © Easybank. All Rights Reserved</p>
+
+      <div class="w-full sm:w-[60%] flex-col-reverse xsm:flex-row flex gap-4 xsm:gap-2">
         <div class="w-full xsm:w-[50%] flex-col  gap-4 items-center xsm:items-start flex justify-between ">
-          <div class="overflow-hidden w-[200px]">
+          <div class="overflow-hidden w-[200px] mx-auto sm:mx-0">
             <img src="./images/logo_bank.PNG" alt="logo_footer">
           </div>
           <div class="flex gap-2">
@@ -321,7 +323,7 @@
           <button
             class="flex  shadow-paleRed bg-brightRed hover:shadow-lg text-white rounded-full px-4 py-2">Go</button>
         </div>
-        <p class="text-gray-200"> © Easybank. All Rights Reserved</p>
+        <p class="hidden sm:block text-gray-200"> © Easybank. All Rights Reserved</p>
       </div>
     </div>
 

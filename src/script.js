@@ -26,3 +26,12 @@ document.addEventListener("click", (event) => {
 window.addEventListener("scroll", () => {
   hideNavbar();
 });
+
+window.addEventListener("scroll", function () {
+  var navba = document.getElementById("navbar_contain");
+  if (window.scrollY > 15) {
+    navba.classList.add("scrolled");
+  } else {
+    navba.classList.remove("scrolled");
+  }
+});
